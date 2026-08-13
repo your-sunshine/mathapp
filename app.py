@@ -100,7 +100,6 @@ def solve_math(question):
 
     st.success("✅ Solusi berhasil ditemukan!")
 
-    st.markdown('<div class="result-container">', unsafe_allow_html=True)
     st.markdown("### 📖 Detail Penyelesaian")
     st.divider()
 
@@ -115,7 +114,6 @@ def solve_math(question):
                 
         st.write("") 
 
-    st.markdown("</div>", unsafe_allow_html=True)
 
 
 st.markdown("""
