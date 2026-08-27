@@ -19,11 +19,6 @@ password = st.text_input("Password", type="password")
 confirm_password = st.text_input("Confirm Password", type="password")
 
 if st.button("Create Account", use_container_width=True):
-    if not email or not password or not confirm_password:
-        st.error("Please fill in all fields.")
-    elif password != confirm_password:
-        st.error("Passwords do not match.")
-    else:
-        st.session_state.logged_in = True
-        st.session_state.current_user = email
-        st.success("Registration successful!")
+    st.session_state.logged_in = True
+    st.session_state.current_user = email
+    st.success("Registration successful!")
