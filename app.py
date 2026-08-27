@@ -6,7 +6,7 @@ st.set_page_config(
     layout="centered"
 )
 
-if not st.session_state.logged_in:
+if "logged_in" not in st.session_state:
     st.session_state.logged_in = False
 
 if st.session_state.logged_in:

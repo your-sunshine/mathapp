@@ -4,7 +4,7 @@ import streamlit as st
 
 if not st.session_state.logged_in:
     st.switch_page("pages/login.py")
-
+    
 try:
     APP_ID = st.secrets["WOLFRAM_APP_ID"]
 except KeyError:
