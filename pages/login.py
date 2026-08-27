@@ -18,8 +18,8 @@ email = st.text_input("Email")
 password = st.text_input("Password", type="password")
 confirm_password = st.text_input("Confirm Password", type="password")
 
-if st.button("Register", use_container_width=True):
-    if not email or not password:
+if st.button("Create Account", use_container_width=True):
+    if not email or not password or not confirm_password:
         st.error("Please fill in all fields.")
     elif password != confirm_password:
         st.error("Passwords do not match.")
