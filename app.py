@@ -1,9 +1,9 @@
 import requests
 import streamlit as st
-
+import os
 
 try:
-    APP_ID = st.secrets["WOLFRAM_APP_ID"]
+    APP_ID = os.getenv("WOLFRAM_APP_ID")
 except KeyError:
     st.error("⚠️ Error: APP_ID not found.")
     st.stop()
